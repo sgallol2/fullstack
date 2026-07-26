@@ -15,4 +15,11 @@ export class HomeController {
     res.render('home/about', { viewData: viewData });
   }
 
+  static contacts(req: Request, res: Response): void {
+    const viewData: { [key: string]: any } = {};
+    viewData["title"] = "Contacts";
+
+    res.render('home/contacts', { viewData: viewData });
+  }
+
 }
